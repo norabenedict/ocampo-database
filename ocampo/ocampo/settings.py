@@ -121,11 +121,11 @@ STATIC_URL = '/static/'
 # local_settings has full access to everything defined in this module.
 # Also force into sys.modules so it's visible to Django's autoreload.
 
-f = os.path.join(BASE_DIR, "mep", "local_settings.py")
+f = os.path.join(BASE_DIR, "local_settings.py")
 if os.path.exists(f):
     import sys
     import imp
-    module_name = "mep.local_settings"
+    module_name = "ocampo.local_settings"
     module = imp.new_module(module_name)
     module.__file__ = f
     sys.modules[module_name] = module
