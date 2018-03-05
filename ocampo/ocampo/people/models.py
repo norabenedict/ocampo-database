@@ -23,40 +23,44 @@ class Book(models.Model):
         managed = False
         db_table = 'books'
 
+    def __str__(self):
+        return self.title
 
-class ContributionRolePersonContribution(models.Model):
-    contributions = models.ForeignKey('Contribution', models.DO_NOTHING, blank=True, null=True)
-    contribution_role_type = models.ForeignKey('ContributionRoleType', models.DO_NOTHING, blank=True, null=True)
-    people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
+#class ContributionRolePersonContribution(models.Model):
+    #contributions = models.ForeignKey('Contribution', models.DO_NOTHING, blank=True, null=True)
+    #contribution_role_type = models.ForeignKey('ContributionRoleType', models.DO_NOTHING, blank=True, null=True)
+    #people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
+    #notes = models.TextField(blank=True, null=True)
 
-    class Meta:
-        managed = False
-        db_table = 'contribution_role_person_contribution'
-
-
-class ContributionRoleType(models.Model):
-    contribution_role_type_name = models.TextField(blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'contribution_role_type'
+    #class Meta:
+        #managed = False
+        #db_table = 'contribution_role_person_contribution'
 
 
-class Contribution(models.Model):
-    issues = models.ForeignKey('Issue', models.DO_NOTHING, blank=True, null=True)
-    people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
-    title = models.CharField(max_length=250, blank=True, null=True)
-    start_page = models.CharField(max_length=10, blank=True, null=True)
-    end_page = models.CharField(max_length=10, blank=True, null=True)
-    page_total = models.TextField(blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
-    contribution_type = models.CharField(max_length=150, blank=True, null=True)
+#class ContributionRoleType(models.Model):
+    #contribution_role_type_name = models.TextField(blank=True, null=True)
+    #notes = models.TextField(blank=True, null=True)
 
-    class Meta:
-        managed = False
-        db_table = 'contribution'
+    #class Meta:
+        #managed = False
+        #db_table = 'contribution_role_type'
+
+    #def __str__(self):
+        #return self.contribution_role_type_name
+
+#class Contribution(models.Model):
+    #issues = models.ForeignKey('Issue', models.DO_NOTHING, blank=True, null=True)
+    #people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
+    #title = models.CharField(max_length=250, blank=True, null=True)
+    #start_page = models.CharField(max_length=10, blank=True, null=True)
+    #end_page = models.CharField(max_length=10, blank=True, null=True)
+    #page_total = models.TextField(blank=True, null=True)
+    #notes = models.TextField(blank=True, null=True)
+    #contribution_type = models.CharField(max_length=150, blank=True, null=True)
+
+    #class Meta:
+        #managed = False
+        #db_table = 'contribution'
 
 
 class Correspondence(models.Model):
@@ -78,7 +82,7 @@ class DescriptiveBibliography(models.Model):
     binding = models.TextField(blank=True, null=True)
     typography = models.TextField(blank=True, null=True)
     colophon = models.TextField(blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    #repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -97,16 +101,16 @@ class Event(models.Model):
         db_table = 'event'
 
 
-class Issue(models.Model):
-    periodicals = models.ForeignKey('Periodicals', models.DO_NOTHING, blank=True, null=True)
-    number = models.CharField(max_length=10, blank=True, null=True)
-    date = models.DateField(blank=True, null=True)
-    printer = models.CharField(max_length=20, blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
+#class Issue(models.Model):
+    #periodicals = models.ForeignKey('Periodicals', models.DO_NOTHING, blank=True, null=True)
+    #number = models.CharField(max_length=10, blank=True, null=True)
+    #date = models.DateField(blank=True, null=True)
+    #printer = models.CharField(max_length=20, blank=True, null=True)
+    #notes = models.TextField(blank=True, null=True)
 
-    class Meta:
-        managed = False
-        db_table = 'issues'
+    #class Meta:
+        #managed = False
+        #db_table = 'issues'
 
 
 class Occupation(models.Model):
@@ -118,6 +122,8 @@ class Occupation(models.Model):
         managed = False
         db_table = 'occupations'
 
+    def __str__(self):
+        return self.name
 
 class People(models.Model):
     name = models.CharField(max_length=80, blank=True, null=True)
@@ -135,17 +141,17 @@ class People(models.Model):
         db_table = 'people'
 
     def __str__(self):
-        return self.name	
+        return self.name
 
-class Periodicals(models.Model):
-    title = models.CharField(max_length=15, blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
-    descriptive_bibliography = models.ForeignKey(DescriptiveBibliography, models.DO_NOTHING, blank=True, null=True)
+#class Periodical(models.Model):
+    #title = models.CharField(max_length=15, blank=True, null=True)
+    #repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    #notes = models.TextField(blank=True, null=True)
+    #descriptive_bibliography = models.ForeignKey(DescriptiveBibliography, models.DO_NOTHING, blank=True, null=True)
 
-    class Meta:
-        managed = False
-        db_table = 'periodicals'
+    #class Meta:
+        #managed = False
+        #db_table = 'periodicals'
 
 
 class Place(models.Model):
@@ -156,7 +162,10 @@ class Place(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'place'
+        db_table = 'places'
+
+    def __str__(self):
+        return self.name
 
 
 class Repository(models.Model):
