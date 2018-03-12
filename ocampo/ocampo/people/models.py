@@ -3,7 +3,7 @@
 #   * Rearrange models' order
 #   * Make sure each model has one field with primary_key=True
 #   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
-#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+#   * Remove `` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from __future__ import unicode_literals
 
@@ -19,7 +19,7 @@ class Book(models.Model):
     descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'books'
         verbose_name= 'book'
         verbose_name_plural= 'books'
@@ -27,43 +27,49 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+class CreatorBook(models.Model):
+    ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('Ar', 'Artist'), ('PR', 'Prologuist'))
+    creator_role = models.CharField(max_length=2, choices=ROLE_CHOICES, default='AU')
+    person = models.ForeignKey('People', models.DO_NOTHING)
+    book = models.ForeignKey('Book', models.DO_NOTHING)
+    notes = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+         return self.get_creator_role_display()
+
 class ContributionRolePersonContribution(models.Model):
     contributions = models.ForeignKey('Contribution', models.DO_NOTHING, blank=True, null=True)
-    contribution_role_type = models.ForeignKey('ContributionRoleType', models.DO_NOTHING, blank=True, null=True)
+    creator_role = models.ForeignKey('CreatorContribution', models.DO_NOTHING, blank=True, null=True)
     people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'contribution_role_person_contribution'
         verbose_name = 'Contribution Type'
         verbose_name_plural = 'Contribution Types'
 
-class ContributionRoleType(models.Model):
-    contribution_role_type_name = models.TextField(blank=True, null=True)
+class CreatorContribution(models.Model):
+    ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('AR', 'Artist'))
+    creator_role = models.CharField(max_length=2, choices=ROLE_CHOICES, default='AU')
+    person = models.ForeignKey('People', models.DO_NOTHING)
+    contribution = models.ForeignKey('Contribution', models.DO_NOTHING)
     notes = models.TextField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'contribution_role_type'
-        verbose_name = 'Contribution Role'
-        verbose_name_plural = 'Contribution Role'
 
     def __str__(self):
-        return self.contribution_role_type_name
+         return self.get_creator_role_display()
 
 class Contribution(models.Model):
-    issues = models.ForeignKey('Issue', models.DO_NOTHING, blank=True, null=True)
-    people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
     title = models.CharField(max_length=250, blank=True, null=True)
+    issue = models.ForeignKey('Issue', models.DO_NOTHING, blank=True, null=True)
     start_page = models.CharField(max_length=10, blank=True, null=True)
     end_page = models.CharField(max_length=10, blank=True, null=True)
-    page_total = models.TextField(blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
-    contribution_type = models.CharField(max_length=150, blank=True, null=True)
+    TYPE_CHOICES = (('ES', 'Essay'), ('PO', 'Poetry'), ('LE', 'Letter'), ('BR', 'Book Review'), ('IL', 'Illustration'), ('FI', 'Fiction'), ('AN', 'Announcement'), ('OT', 'Other'))
+    contribution_type = models.CharField(max_length=2, choices=TYPE_CHOICES, default='ES')
 
     class Meta:
-        managed = False
+
         db_table = 'contributions'
         verbose_name = 'contribution'
         verbose_name_plural = 'contributions'
@@ -81,7 +87,7 @@ class Correspondence(models.Model):
     location_received = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_received_at')
 
     class Meta:
-        managed = False
+
         db_table = 'correspondence'
         verbose_name = 'correspondence'
         verbose_name_plural = 'correspondence'
@@ -98,7 +104,7 @@ class DescriptiveBibliography(models.Model):
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'descriptive_bibliography'
         verbose_name = 'descriptive bibliography'
         verbose_name_plural = 'descriptive bibliographies'
@@ -106,11 +112,11 @@ class DescriptiveBibliography(models.Model):
 class Event(models.Model):
     date = models.DateField(blank=True, null=True)
     title = models.CharField(max_length=250, blank=True, null=True)
-    #place = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='place_event_occured')
+    place = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'events'
         verbose_name = 'event'
         verbose_name_plural = 'events'
@@ -123,16 +129,17 @@ class Issue(models.Model):
     number = models.CharField(max_length=10, blank=True, null=True)
     date = models.DateField(blank=True, null=True)
     printer = models.CharField(max_length=20, blank=True, null=True)
+    descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'issues'
         verbose_name = 'issue'
         verbose_name_plural = 'issues'
 
     def __str__(self):
-        return self.number
+        return '%s (%s)' % (self.number, self.date.year)
 
 class Occupation(models.Model):
     name = models.CharField(max_length=150, blank=True, null=True)
@@ -140,7 +147,7 @@ class Occupation(models.Model):
     occupation_type = models.CharField(max_length=150, blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'occupations'
         verbose_name = 'occupation'
         verbose_name_plural = 'occupations'
@@ -160,7 +167,7 @@ class People(models.Model):
     viaf_id = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'people'
         verbose_name = 'people'
         verbose_name_plural = 'people'
@@ -170,12 +177,10 @@ class People(models.Model):
 
 class Periodicals(models.Model):
     title = models.CharField(max_length=15, blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
-    descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'periodicals'
         verbose_name = 'periodical'
         verbose_name_plural = 'periodicals'
@@ -190,7 +195,7 @@ class Place(models.Model):
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'places'
         verbose_name = 'place'
         verbose_name_plural = 'places'
@@ -204,7 +209,7 @@ class Repository(models.Model):
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+
         db_table = 'repository'
         verbose_name = 'repository'
         verbose_name_plural = 'repositories'
