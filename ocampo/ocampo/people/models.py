@@ -13,10 +13,14 @@ class Book(models.Model):
     title = models.CharField(max_length=200, blank=True, null=True)
     date = models.DateField(blank=True, null=True)
     price = models.CharField(max_length=20, blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
     people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
     occupations = models.ForeignKey('Occupation', models.DO_NOTHING, blank=True, null=True)
-    descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
+    paper = models.TextField(blank=True, null=True)
+    binding = models.TextField(blank=True, null=True)
+    typography = models.TextField(blank=True, null=True)
+    colophon = models.TextField(blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
 
     class Meta:
 
@@ -28,15 +32,17 @@ class Book(models.Model):
         return self.title
 
 class CreatorBook(models.Model):
-    ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('Ar', 'Artist'), ('PR', 'Prologuist'))
+    ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('AR', 'Artist'), ('PR', 'Prologuist'))
     creator_role = models.CharField(max_length=2, choices=ROLE_CHOICES, default='AU')
     person = models.ForeignKey('People', models.DO_NOTHING)
     book = models.ForeignKey('Book', models.DO_NOTHING)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-         return self.get_creator_role_display()
-
+         return '%s - %s - %s' % (self.person.name,
+                                  self.get_creator_role_display(),
+                                  self.book.title)
+'''
 class ContributionRolePersonContribution(models.Model):
     contributions = models.ForeignKey('Contribution', models.DO_NOTHING, blank=True, null=True)
     creator_role = models.ForeignKey('CreatorContribution', models.DO_NOTHING, blank=True, null=True)
@@ -48,6 +54,7 @@ class ContributionRolePersonContribution(models.Model):
         db_table = 'contribution_role_person_contribution'
         verbose_name = 'Contribution Type'
         verbose_name_plural = 'Contribution Types'
+'''
 
 class CreatorContribution(models.Model):
     ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('AR', 'Artist'))
@@ -57,7 +64,9 @@ class CreatorContribution(models.Model):
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-         return self.get_creator_role_display()
+         return '%s - %s - %s' % (self.person.name,
+                                  self.get_creator_role_display(),
+                                  self.contribution.title)
 
 class Contribution(models.Model):
     title = models.CharField(max_length=250, blank=True, null=True)
@@ -81,10 +90,12 @@ class Correspondence(models.Model):
     sender = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_sent')
     date = models.DateField(blank=True, null=True)
     location_sent = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_sent_to')
-    notes = models.TextField(blank=True, null=True)
-    descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
     recipient = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_received')
     location_received = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_received_at')
+    paper = models.TextField(blank=True, null=True)
+    text = models.TextField(blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
 
     class Meta:
 
@@ -94,20 +105,6 @@ class Correspondence(models.Model):
 
     def __str__(self):
         return '%s to %s on %s' % (self.sender.name, self.recipient.name, self.date.year)
-
-class DescriptiveBibliography(models.Model):
-    paper = models.TextField(blank=True, null=True)
-    binding = models.TextField(blank=True, null=True)
-    typography = models.TextField(blank=True, null=True)
-    colophon = models.TextField(blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
-
-    class Meta:
-
-        db_table = 'descriptive_bibliography'
-        verbose_name = 'descriptive bibliography'
-        verbose_name_plural = 'descriptive bibliographies'
 
 class Event(models.Model):
     date = models.DateField(blank=True, null=True)
@@ -127,9 +124,14 @@ class Event(models.Model):
 class Issue(models.Model):
     periodicals = models.ForeignKey('Periodicals', models.DO_NOTHING, blank=True, null=True)
     number = models.CharField(max_length=10, blank=True, null=True)
+    year = models.CharField(max_length=10, blank=True, null=True)
     date = models.DateField(blank=True, null=True)
     printer = models.CharField(max_length=20, blank=True, null=True)
-    descriptive_bibliography = models.ForeignKey('DescriptiveBibliography', models.DO_NOTHING, blank=True, null=True)
+    cover_color = models.CharField(max_length=20, blank=True, null=True)
+    arrow_color = models.CharField(max_length=30, blank=True, null=True)
+    colophon = models.TextField(blank=True, null=True)
+    price = models.CharField(max_length=10, blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -139,12 +141,13 @@ class Issue(models.Model):
         verbose_name_plural = 'issues'
 
     def __str__(self):
-        return '%s (%s)' % (self.number, self.date.year)
+        return '%s . %s (%s)' % (self.year, self.number, self.date.year)
 
 class Occupation(models.Model):
-    name = models.CharField(max_length=150, blank=True, null=True)
+    TYPE_CHOICES = (('WR', 'Writer'), ('PR', 'Producer'), ('AR', 'Artist'), ('AT', 'Activist'), ('AC', 'Academic'), ('SO', 'Socialite'))
+    occupation_type = models.CharField(max_length=2, choices=TYPE_CHOICES, default='WR')
+    name = models.CharField(max_length=150, blank=True)
     notes = models.TextField(blank=True, null=True)
-    occupation_type = models.CharField(max_length=150, blank=True, null=True)
 
     class Meta:
 
@@ -162,6 +165,7 @@ class People(models.Model):
     deathdate = models.DateField(blank=True, null=True)
     deathplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_died')
     occupations = models.ForeignKey(Occupation, models.DO_NOTHING, blank=True, null=True)
+    #TODO: make this a many to many field
     notes = models.TextField(blank=True, null=True)
     sex = models.CharField(max_length=20, blank=True, null=True)
     viaf_id = models.IntegerField(blank=True, null=True)
