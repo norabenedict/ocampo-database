@@ -164,7 +164,7 @@ class People(models.Model):
     birthplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_born')
     deathdate = models.DateField(blank=True, null=True)
     deathplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_died')
-    occupations = models.ForeignKey(Occupation, models.DO_NOTHING, blank=True, null=True)
+    occupations = models.ManyToManyField(Occupation, blank=True)
     #TODO: make this a many to many field
     notes = models.TextField(blank=True, null=True)
     sex = models.CharField(max_length=20, blank=True, null=True)
@@ -203,6 +203,7 @@ class Place(models.Model):
         db_table = 'places'
         verbose_name = 'place'
         verbose_name_plural = 'places'
+        ordering = ('name',)
 
     def __str__(self):
         return self.name
