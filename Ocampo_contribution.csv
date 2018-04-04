@@ -1,0 +1,433 @@
+Year,Number,Date,Title,Start_Page,End_Page,Role,Contribution_type,Contribution_type_choice,Notes
+1,1,1931-01-01,"""Carta a Waldo Frank""",7,18,Author,Letter,LE,
+1,1,1931-01-01,"""La selva""",19,52,Author,Essay,ES,
+1,1,1931-01-01,"""Carta a unos desconocidos""",53,63,Author,Essay,ES,
+1,1,1931-01-01,"""Notas de viaje a Ouro Preto""",74,86,Author,Essay/Diary Entry,ES,
+1,1,1931-01-01,"""Compas poético""",54,73,Author,Essay,ES,
+1,1,1931-01-01,"""Los cuatros [sic] ordenes de la arquitectura picassiana""",87,100,Author,Essay,ES,
+1,1,1931-01-01,"""De un epistolario""",101,117,Author,Letter,LE,"Letters from Güiraldes to Victoria Ocampo, Valery Larbaud, and his mother"
+1,1,1931-01-01,"""Los problemas del compositor americano""",118,128,Author,Essay,ES,
+1,1,1931-01-01,"""El coronel Ascasubi""",129,140,Author,Essay,ES,
+1,1,1931-01-01,"""El teatro total""",141,148,Author,Essay,ES,
+1,1,1931-01-01,"""Un paso de América"" (notas)",149,158,Author,Essay,ES,
+1,1,1931-01-01,"""El cinema en el atolladero"" (notas)",158,165,Author,Essay,ES,
+1,1,1931-01-01,"""La aventura del mueble"" (notas)",166,174,Author,Essay,ES,
+1,1,1931-01-01,"""Séneca en las orillas"" (notas)",174,179,Author,Essay,ES,
+1,1,1931-01-01,"""Precisiones de Le Corbusier"" (notas)",179,182,Author,Book Review,BR,
+1,1,1931-01-01,"""Nuevos pintores argentinos"" (notas)",182,192,Author,Essay,ES,
+1,1,1931-01-01,"""Noticia y vejámen del 'alacraneo'"" (notas)",192,195,Author,Essay,ES,
+1,1,1931-01-01,"""Ansermet y el sentido de una obra cultural"" (notas)",195,199,Author,Essay,ES,
+1,1,1931-01-01,"""Buenos Aires""",[186],[186],Artist,Drawing,IL,
+1,1,1931-01-01,"""Mujeres de Buenos Aires""",[28],[28],Artist,Artistic Print,IL,
+1,1,1931-01-01,"""Dibujo""",[89],[89],Artist,Drawing,IL,
+1,1,1931-01-01,"""Palo Borracho (1)""",[90],[90],Artist,Photograph,IL,
+1,1,1931-01-01,"""Palo Borracho (2)""",[91],[91],Artist,Photograph,IL,
+1,1,1931-01-01,"""Dibujo""",[92],[92],Artist,Drawing,IL,
+1,1,1931-01-01,"""Inscripciones de carros (1)""",[154],[154],Artist,Photograph,IL,
+1,1,1931-01-01,"""Inscripciones de carros (2)""",[155],[155],Artist,Photograph,IL,
+1,1,1931-01-01,"""La terraza""",[185],[185],Artist,Painting,IL,
+1,1,1931-01-01,"""El paseo""",[187],[187],Artist,Painting,IL,
+1,1,1931-01-01,"""La mujer Lila""",[188],[188],Artist,Painting,IL,
+1,2,1931-05-01,"""Perspectivas sudamericanas""",7,15,Author,Essay,ES,
+1,2,1931-05-01,"""Contestación a un epílogo de Ortega y Gasset""",16,52,Author,Essay,ES,
+1,2,1931-05-01,"""Pecho en tierra""",53,58,Author,Poetry,PO,
+1,2,1931-05-01,"""Riverismo""",59,85,Author,Essay,ES,
+1,2,1931-05-01,"""Sumersión""",86,133,Author,Fiction,FI,
+1,2,1931-05-01,"""El Martín Fierro""",134,145,Author,Essay,ES,
+1,2,1931-05-01,"""Excusas por mi salud""",146,163,Author,Fiction,FI,The epigraph to this work is very similar to those in Borges's and Bioy's various anthologies
+1,2,1931-05-01,"""Los problemas del compositor americano""",170,180,Author,Essay,ES,
+1,2,1931-05-01,"""Tres poemas""",164,169,Author,Poetry,PO,These poems are presented in side-by-side translation (English on the one side and Spanish on the other); at least one of the poems is translated by Borges (the other two do not have specific mentions of translators -- he might have translated all three)
+1,2,1931-05-01,"""De un epistolario""",181,191,Author,Letter,LE,Written to Valery Larbaud and Jules Supervielle
+1,2,1931-05-01,"""Al márgen de 'La rebelión de las masas'"" (notas)",192,203,Author,Book Review,BR,Review of Ortega y Gasset's work of the same name
+1,2,1931-05-01,"""Ramón Gómez de la Serna en Buenos Aires"" (notas)",203,208,Author,Essay,ES,
+1,2,1931-05-01,"""Misterios poéticos"" (notas)",208,216,Author,Essay,ES,
+1,2,1931-05-01,"""Una ciudad de América"" (notas)",216,220,Author,Essay,ES,
+1,2,1931-05-01,"""Martí"" (notas)",220,223,Author,Essay,ES,
+1,2,1931-05-01,"""El juicio de la vieja generación sobre la nueva. Acotaciones a un pensamiento de Scheler"" (notas)",224,227,Author,Essay,ES,
+1,2,1931-05-01,"""Dibujo de Picasso""",[52],[52],Artist,Drawing,IL,
+1,2,1931-05-01,"""Pintura mural en la Secretaria de la Educación Pública. México""",[185],[185],Artist,Mural,IL,
+1,2,1931-05-01,"""Pintura mural en la Secretaria de la Educación Pública. México""",[186],[186],Artist,Mural,IL,
+1,2,1931-05-01,"""Dibujo""",[218],[218],Artist,Drawing,IL,
+1,3,1931-08-01,"""Palabras francesas""",7,25,Author,Essay,ES,
+1,3,1931-08-01,"""Los dos augures""",26,48,Author,Fiction,FI,
+1,3,1931-08-01,"""El arte en los Estados Unidos""",49,82,Author,Essay,ES,
+1,3,1931-08-01,"""Donaire""",83,84,Author,Poetry,PO,
+1,3,1931-08-01,"""Pigmalion contra Galatea""",85,93,Author,Essay,ES,
+1,3,1931-08-01,"""Bajo el faro del miedo""",94,97,Author,Misc.,OT,Translated by Guillermo de Torre
+1,3,1931-08-01,"""Un mundo perdido""",98,131,Author,Essay,ES,The epigraph to this work is very similar to those in Borges's and Bioy's various anthologies
+1,3,1931-08-01,"""Tres poemas""",132,137,Author,Poetry,PO,These poems are presented in side-by-side translation (English on the one side and Spanish on the other); translated by Jorge Luis Borges
+1,3,1931-08-01,"""Diagnóstico de la nueva poesía chilena""",138,154,Author,Essay,ES,
+1,3,1931-08-01,"""Arquitectura funcional""",155,161,Author,Essay,ES,
+1,3,1931-08-01,"""El medievalismo en la pintura colonial"" (notas)",162,166,Author,Essay,ES,
+1,3,1931-08-01,"""Sobre la reforma de la ortografía portuguesa"" (notas)",167,170,Author,Essay,ES,
+1,3,1931-08-01,"""Films"" (notas)",171,173,Author,Essay,ES,"""El asesino Karamasoff"" (Ozep); ""Luces de la ciudad"" (Chaplin)"
+1,3,1931-08-01,"""El edificio de New York Telephone (1926)""",[57],[57],Artist,Watercolor,IL,
+1,3,1931-08-01,"""Jack en el pulpito (1930)""",[58],[58],Artist,Painting,IL,
+1,3,1931-08-01,"""El platano (1926)""",[59],[59],Artist,Painting,IL,
+1,3,1931-08-01,"""Saliendo del Maine (1927)""",[60],[60],Artist,Watercolor,IL,
+1,4,1931-11-01,"""Nuestras imposibilidades"" (notas)",131,134,Author,Essay,ES,
+1,4,1931-11-01,"""El mundo atlántico""",7,82,Author,Essay,ES,
+1,4,1931-11-01,"""El malestar de la literatura italiana"" ",118,124,Author,Essay,ES,
+1,4,1931-11-01,"""Poemas"" ",83,90,Author,Poetry,PO,
+1,4,1931-11-01,"""Crítica de conferencias. Ramón y Morand"" (notas)",134,142,Author,Essay,ES,
+1,4,1931-11-01,"""Estilística. Un estudio sobre Quevedo"" (notas)",163,171,Author,Essay,ES,
+1,4,1931-11-01,"""A propósito de 'Lady Chatterley's Lover'""",125,130,Author,Essay,ES,
+1,4,1931-11-01,"""Policéfalo y señora"" ",91,106,Author,Essay,ES,
+1,4,1931-11-01,"""Gabriela Mistral y José Martí"" (notas)",156,163,Author,Essay,ES,"""Libro recibidos"" (1938) - Literatura hispanoamericana"
+1,4,1931-11-01,"""La novela norteamericana de post-guerra""",107,118,Author,Essay,ES,
+1,4,1931-11-01,"""Un balance literario: 1918-1930"" (notas)",142,147,Author,Essay,ES,
+1,4,1931-11-01,"""'Vida' y 'espíritu' en la metafísica scheleriana"" (notas)",148,156,Author,Essay,ES,
+1,4,1931-11-01,"""Un poema vivo"" (notas)",172,176,Author,Essay,ES,
+2,5,1932-05-01,"""Carta al arquitecto Erich Mendelsohn, de Berlín"" (notas)",170,171,Author,Letter,LE,
+2,5,1932-05-01,"""El arte narrativo y la magia"" (notas)",172,179,Author,Essay,ES,
+2,5,1932-05-01,"""Street Scene"" (notas)",198,200,Author,Essay,ES,
+2,5,1932-05-01,"""Rumbo a Goethe""",7,85,Author,Essay,ES,
+2,5,1932-05-01,"""Martin Heidegger ante la sombra de Dostoiewsky""",151,169,Author,Essay,ES,
+2,5,1932-05-01,"""Ulises y otros trabajos de James Joyce""",86,127,Author,Essay,ES,
+2,5,1932-05-01,"""¿Qué es metafísica""",128,150,Author,Essay,ES,libro (¿?): ¿Qué es eso de filosofía?
+2,5,1932-05-01,"""La danza en México"" (notas)",179,186,Author,Essay,ES,
+2,5,1932-05-01,"""La América del Norte a través d elos ojos de su juventud"" (notas)",186,194,Author,Book Reviews,BR,Ernest Hemingway and William Faulkner
+2,5,1932-05-01,"""La vida de los escritores rusos"" (notas)",194,198,Author,Essay,ES,
+2,6,1932-11-01,"""Noticia de los Kenningar"" (notas)",202,208,Author,Essay,ES,
+2,6,1932-11-01,"""El hombre que murió (D. H. Lawrence)""",7,56,Author,Book Review,BR,
+2,6,1932-11-01,"""Cartas sin permiso . Un desliz de Croce"" (notas)",196,202,Author,Essay,ES,
+2,6,1932-11-01,"""Cielo desterrado"" ",57,67,Author,Fiction,FI,
+2,6,1932-11-01,"""Orientaciones últimos de la filosofía""",68,116,Author,Essay,ES,
+2,6,1932-11-01,"""El amor no es amado""",117,119,Author,Poetry,PO,
+2,6,1932-11-01,"""Poemas"" ",120,123,Author,Poetry,PO,
+2,6,1932-11-01,"""El problema argentino de la lengua"" ",124,178,Author ,Essay,ES,"""Libro recibidos"" (1938): Castellano, español, idioma nacional"
+2,6,1932-11-01,"""El teatro alquímico""",179,184,Author,Essay,ES,
+2,6,1932-11-01,"""Acerca de Jorge Santayana""",185,195,Author,Essay,ES,
+2,6,1932-11-01,"""Goethe en las guerras de la revolución"" (notas)",208,213,Author,Essay,ES,"signed ""J. I."""
+3,7,1933-04-01,"""Al margen del 'Wagner' de Pourtalès"" (notas)",145,150,Author,Essay,ES,
+3,7,1933-04-01,"""Elementos de preceptiva"" (notas)",158,161,Author,Essay,ES,
+3,7,1933-04-01,"""Lucubraciones sobre la muerte""",96,109,Author,Essay,ES,
+3,7,1933-04-01,"""Logaritmos de imágenes"" (notas)",153,157,Author,Essay,ES,"signed ""R.G.S."""
+3,7,1933-04-01,"""La experiencia rusa de Waldo Frank"" (notas)",151,153,Author,Essay,ES,
+3,7,1933-04-01,"""Breve historia de mis opinions (traducción de Antonio Marichalar)""",7,44,Author,Essay,ES,Translated by Antonio Marichalar
+3,7,1933-04-01,"""Un filósofo americano: Waldo Frank"" ",45,95,Author,Essay,ES,
+3,7,1933-04-01,"""El cantaro""",110,129,Author,Fiction,FI,"Chapter in his novel ""El aprendiz de brujo"""
+3,7,1933-04-01,"""Balance del teatro alemán""",130,142,Author,Essay,ES,
+3,7,1933-04-01,"""El mundo de los hombres invisibles""",143,144,Author,Essay,ES,Photographs of streets at night throughout this entry
+3,8,1933-09-01,"""Arte de injuriar""",69,76,Author,Essay,ES,
+3,8,1933-09-01,"""Un gran poeta americano. Introducción a Hart Crane""",27,59,Author,Essay,ES,
+3,8,1933-09-01,"""Carta de Norteamerica de crisis de 'elites'"" ",107,116,Author,Letter,LE,
+3,8,1933-09-01,"""El porvenir de nuestra lengua"" (notas)",141,150,Author,Essay,ES,
+3,8,1933-09-01,"""La verdadera significación de Ludwig Klages""",7,26,Author,Essay,ES,
+3,8,1933-09-01,"""El pasajero de su destino""",60,68,Author,Poetry,PO,
+3,8,1933-09-01,"""Paisajes líricos a punta seca""",77,82,Author,Poetry,PO,Includes a series of drawings
+3,8,1933-09-01,"""Catilina y la ambición política""",83,91,Author,Fiction,FI,
+3,8,1933-09-01,"""La imagen""",92,106,Author,Essay,ES,
+3,8,1933-09-01,"""1. A propósito del libro de Keyserling""",117,130,Author,Essay,ES,(Crítica de 'Las meditaciones sudamericanas')
+3,8,1933-09-01,"""2. Introducción a un sudamericanismo esencial""",131,140,Author,Essay,ES,Crítica de 'Las meditaciones sudamericanas')
+3,8,1933-09-01,"""La esencia del animal"" (notas)",150,155,Author,Essay,ES,
+3,8,1933-09-01,"""Leo Ferrero"" (notas)",155,157,Author,Essay,ES,
+3,8,1933-09-01,"""Notícula"" (notas)",157,158,Author,Announcement,AN,Publication of the Editorial Sur's first book; list of the names of contributors to the journal (SUR) up to this issue
+4,9,1934-07-01,"""Sobres dos poetas de Francia: 'Anna de Noailles y su poesía' - 'Paul Valéry, ""El cementerio marino""'""",7,68,Author,Essay,ES,
+4,9,1934-07-01,"""¿Por qué ha de sobrevivir el judío?""",152,170,Author,Essay,ES,
+4,9,1934-07-01,"""La obra poética de Pedro Salinas"" (notas)",175,182,Author,Essay,ES,
+4,9,1934-07-01,"""Suerte de Jacobo Uber""",69,113,Author,Fiction,FI,
+4,9,1934-07-01,"""La autobiografía de Gertrude Stein"" (notas)",171,175,Author,Essay,ES,"Signed: ""Princeton, mayo de 1934"""
+5,10,1935-07-01,"""Al margen de Gide""",7,23,Author,Essay,ES,"After the table of contents, a note at the end of this issue reads: ""Todas las colaboraciones que no llevan al pie indicación alguna respecto al lugar de donde proceden, han sido escritas en Buenos Aires"""
+5,10,1935-07-01,"""I. 'Espoirs'"" (Homenaje a Leo Ferrero)",71,75,Author,Essay,ES,
+5,10,1935-07-01,"""A propósito de 'Hombre de Aran'"" (notas)",95,96,Author,Essay,ES,"Signed ""V. O."""
+5,10,1935-07-01,"""Los laberintos policiales y Chesterton"" (notas)",92,94,Author,Essay,ES,
+5,10,1935-07-01,"""Dos momentos del poema 'El Buque'""",29,31,Author,Essay,ES,
+5,10,1935-07-01,"""Ricardo Güiraldes"" (notas)",101,104,Author,Book Review,BR,"Review of: ""Das Buch vom Gaucho Sombra. Traducción autorizada de H. ollerich. Berlín, B. Casirer, 1934"""
+5,10,1935-07-01,"""D. Salvador de Madariaga"" (notas)",105,106,Author,Essay,ES,"signed ""A. A."""
+5,10,1935-07-01,"""Introducción al estudio de los tipos psicológicos""",24,28,Author,Essay,ES,
+5,10,1935-07-01,"""Alberdi Precursor"" ",32,53,Author,Essay,ES,
+5,10,1935-07-01,"""El universo y la naturaleza a través de las representaciones míticas de dos tribus salvajes de la argentina""",54,70,Author,Essay,ES,
+5,10,1935-07-01,"""II. La novela de Leo Ferrero"" (Homenaje a Leo Ferrero)",76,83,Author,Essay,ES,
+5,10,1935-07-01,"""Revisión y Justiprecio del superrealismo"" (notas)",84,91,Author,Essay,ES,"""A propósito de QU'EST-CE QUE LE SURREALISME, conferencia de André Breton (René Henriquez, editor, Bruselas, 1934)"""
+5,10,1935-07-01,"""Sobre 'The Death and Birth of David Markand' de Waldo Frank"" (notas)",97,100,Author,Book Review,BR,
+5,10,1935-07-01,"""'Titeres de Cachiporra'. Los fantoches de Maese Perico"" (notas)",107,107,Author,Arts Review,RE,
+5,10,1935-07-01,"""Discos: A propósito de 'Les Noches' de Stawinsky"" (notas)",108,111,Author,Music Review,RE,
+5,11,1935-08-01,"""La mujer y su expresión""",25,40,Author,Essay,ES,"""Conferencia radiotelefónica al público de España y de la Argentina""; also published with the Editorial Sur"
+5,11,1935-08-01,"""El Delator"" (notas)",90,91,Author,Film Review,RE,
+5,11,1935-08-01,"""Naturaleza y límite de la influencia de los escritores""",7,24,Author,Essay,ES,"""Discurso pronunciado en el Congreso Internacional de Escritores y destinado luego especialmente por el autor para ser publicado en SUR"""
+5,11,1935-08-01,"""Momentum vitae""",41,47,Author,Fiction,FI,"""Este fragmento pertenece a una obra próxima a aparecer"""
+5,11,1935-08-01,"""Alberdi Precursor"" ",48,89,Author,Essay,ES,
+5,11,1935-08-01,"""René Crevel"" (notas)",92,96,Author,Essay,ES,The publication of this piece appears to have coincided with the death of René Crevel
+5,11,1935-08-01,"""El punto de vista de C. G. Jung y la 'Realidad del Alma'"" (notas)",97,104,Author,Essay,ES,
+5,11,1935-08-01,"""Arturo Toscanini"" (notas)",104,109,Author,Essay,ES,
+5,11,1935-08-01,"""'Crimen a las 3'. Una película de valores desiguales""",109,111,Author,Film Review,RE,
+5,12,1935-09-01,"""Un capítulo de 'La muerte y nacimiento de David Markand'""",30,50,Translator,Fiction,FI,
+5,12,1935-09-01,"""'Don Segundo Sombra' y el ejercicio ilegal de la crítica"" (notas)",76,80,Author,Essay,ES,
+5,12,1935-09-01,"""El escritor de hoy frente a su tiempo""",7,29,Author,Essay,ES,
+5,12,1935-09-01,"""Una exposición de escenotécnica italiana"" (notas)",80,81,Author,Arts Review,RE,
+5,12,1935-09-01,"""Tres conciertos de Juan José Castro"" (notas)",89,92,Author,Music Review,RE,
+5,12,1935-09-01,"""El espíritu de Sudamerica""",51,57,Author,Essay,ES,
+5,12,1935-09-01,"""Elegía""",58,67,Author,Poetry,PO,
+5,12,1935-09-01,"""Un cambio fundamental en la inglaterra de hoy""",68,75,Author,Essay,ES,
+5,12,1935-09-01,"""Las crónicas autobiográficas de Igor Strawinsky"" (notas)",82,85,Author,Book Review,RE,
+5,12,1935-09-01,"""Héctor Villa Lobos y Claudio Arrau"" (notas)",85,89,Author,Essay,ES,
+5,12,1935-09-01,"""Fines y organización de los salones de arte"" (notas)",92,97,Author,Essay,ES,
+5,12,1935-09-01,"""A propósito del film 'Escape me never'"" (notas)",97,98,Author,Film Review,RE,
+5,13,1935-10-01,"""El esbozo de una vida""",40,51,Author,Essay,ES,
+5,13,1935-10-01,"""Personalismo y marxismo""",7,39,Author,Essay,ES,
+5,13,1935-10-01,"""Grandeza y servidumbre del libro (Las fuentes de la cultura)""",52,83,Author,Essay,ES,
+5,13,1935-10-01,"""Salon de artes plásticas: Resumen"" (notas)",84,86,Author,Essay,ES,
+5,13,1935-10-01,"""Salon de artes plásticas: Los premios"" (notas)",86,87,Author,Essay,ES,
+5,13,1935-10-01,"""Fotografías de Horacio Coppola y Grete Stern"" (notas)",91,102,Author,Essay,ES,
+5,13,1935-10-01,"""Una obra americana"" (notas)",103,111,Author,Book Review,RE,
+5,13,1935-10-01,"""Salon de artes plásticas: Tres opinions"" (notas)",88,88,Author,Essay,ES,
+5,13,1935-10-01,"""Salon de artes plásticas: Tres opinions"" (notas)",88,89,Author,Essay,ES,
+5,13,1935-10-01,"""Salon de artes plásticas: Tres opinions"" (notas)",89,90,Author,Essay,ES,
+5,14,1935-11-01,"""Sobre un mal de esta ciudad"" (notas)",99,104,Author,Essay,ES,
+5,14,1935-11-01,"""Una vindicación de Mark Twain""",40,46,Author,Essay,ES,
+5,14,1935-11-01,"""Borges, narrador"" (notas)",105,115,Author,Book Review,RE,Detailed book review/essay on Borges's Historia universal de la infamia
+5,14,1935-11-01,"""Siete años""",74,89,Author,Fiction,FI,
+5,14,1935-11-01,"""Kierkegaard y Dostoyewsky""",7,39,Author,Essay,ES,
+5,14,1935-11-01,"""Tradición e Innovación en Lope de Vega""",47,73,Author,Essay,ES,
+5,14,1935-11-01," ""Antecedentes de la poesía gauchesca en el siglo XVIII""",90,98,Author,Essay,ES,
+5,15,1935-12-01,"""Domingos en Hyde Park"" (notas)",98,115,Author,Essay,ES,Part of her longer book (Domingos en Hyde Park)
+5,15,1935-12-01,"""La conciencia desventurada (Bergson, Freud y los dioses)""",30,80,Author,Essay,ES,
+5,15,1935-12-01,"""El sentido de la noche en el 'Nocturno Europeo' de Mallea"" (notas)",116,121,Author,Book Review,RE,Book Review/Essay about Nocturno Europeo
+5,15,1935-12-01,"""Siete años (III)""",81,97,Author,Fiction,FI,
+5,15,1935-12-01,"""Un cuarto propio""",7,29,Author,Essay,ES,Published with the Editorial Sur later (El cuarto propio)
+6,16,1936-01-01,"""Tres novelas ejemplares"" ",59,75,Author,Essay,ES,
+6,16,1936-01-01,"""Sobre el porvenir de las civilizaciones del mediterraneo""",7,25,Author,Essay,ES,
+6,16,1936-01-01,"""Camino interior"" (notas)",76,77,Author,Book Review,RE,
+6,16,1936-01-01,"""Un cuarto propio (Capítulos 2 y 3)""",26,58,Author,Essay,ES,
+6,16,1936-01-01,"""Enseñanzas de un film"" (notas)",78,82,Author,Essay,ES,"books reviewed in his 1938 (año 8, n. 44) issue: _El arte moderno en México_, Justino Fernández; _Pinturas murales en la universidad de Guadalajara de José Clemente Orozco_, Luis Cardoz y Aragón; _L'Angelo in Borghese_, Carlo Bello"
+6,16,1936-01-01,"""Conexiones"" (notas)",83,85,Author,Essay,ES,
+6,17,1936-02-01,"""Notas actuales sobre la 'sociología generale' de Pareto""",7,22,Author,Essay,ES,
+6,17,1936-02-01,"""Los gracos o el advenimiento de la plutocracia romana""",23,40,Author,Essay,ES,
+6,17,1936-02-01,"""Bach y la música de hoy"" (notas)",77,82,Author,Essay,ES,
+6,17,1936-02-01,"""'El Buque'"" (notas)",76,77,Author,Book Review,RE,
+6,17,1936-02-01,"""Un cuarto propio (capítulo 4)""",41,61,Author,Essay,ES,"**at the end of each of these excerpts it says ""continuará"" -- very similar to serial publications (s. xix)"
+6,17,1936-02-01," ""La revolución del orden""",62,75,Author,Essay,ES,this entry has a short bio -- very similar to the synthetic bios in El Hogar (WEIRD!)
+6,17,1936-02-01,"""Influencia del modo en la composición musical"" (notas)",83,85,Author,Essay,ES,
+6,18,1936-03-01,"""La estatua casera"" (notas)",85,86,Author,Book Review,RE,
+6,18,1936-03-01,"""Palabras sobre Sur""",7,8,Author,Essay,ES,
+6,18,1936-03-01,"""Tríptico a Stephane Mallarmé""",39,45,Author,Poetry,PO,
+6,18,1936-03-01,"""El escritor de hoy frente a su tiempo""",20,28,Author,Essay,ES,
+6,18,1936-03-01,"""Un cuarto propio (conclusión)""",46,81,Author,Essay,ES,
+6,18,1936-03-01,"""Para iniciar una sección de crítica"" (notas)",82,85,Author,Essay,ES,
+6,18,1936-03-01,"""Beethoven""",9,19,Author,Essay,ES,
+6,18,1936-03-01,"""Ideas a la Sordina""",29,38,Author,Essay,ES,
+6,18,1936-03-01,"""Los tomates y la luna"" (notas)",87,90,Author,Essay,ES,
+6,19,1936-04-01,"""Dos films"" (notas)",109,110,Author,Film Review,RE,
+6,19,1936-04-01,"""Libertad y organización en el Siglo XIX""",54,59,Author,Book Review,RE,"Bertrand Russel, Caminos de la libertad (more specifically his study: Libertad y organización en el siglo XIX)"
+6,19,1936-04-01,"""Strawinsky""",108,108,Author,Announcement,AN,Stravinsky is in Buenos Aires
+6,19,1936-04-01,"""El primer debate de 'SUR'"" (noticulares)",114,115,Author,Announcement,AN,el debate en sí no aparece hasta el número 20
+6,19,1936-04-01,"""Luz y sombra de Becquer""",60,67,Author,Poetry,PO,
+6,19,1936-04-01,"""Perséphone""",7,,Author,Theatre,TH,"free printing of this work (translated by Borges) comes out this year, too"
+6,19,1936-04-01,"""El castillo estrellado"" (contribución surrealista especial para 'SUR')",71,99,Author,Essay,ES,(contribución surrealista especial para 'SUR')
+6,19,1936-04-01,"""Retratos""",[69],[69],Artist,Illustration,IL,(contribución surrealista especial para 'SUR')
+6,19,1936-04-01,"""Tres poemas""",100,107,Author,Poetry,PO,(contribución surrealista especial para 'SUR')
+6,19,1936-04-01,"""El nuevo plan de estudios de la Escuela de Bellas Artes"" (notas)",110,113,Author,Essay,ES,
+6,20,1936-05-01,"""La doctrina de los ciclos""",20,29,Author,Essay,ES,
+6,20,1936-05-01,"""Korn, o el filósofo prudente"" (notas)",71,75,Author,Book Review,RE,"Alejandro Korn, Apuntes filosóficos"
+6,20,1936-05-01,"""El 'Catilina' de Ernesto Palacio y la historiografía romana"" (notas)",77,83,Author,Book Review,RE,"Ernesto Palacio, Catilina"
+6,20,1936-05-01,"""Crónicas de arte"" (notas)",75,77,Author,Essay,ES,
+6,20,1936-05-01,"""Recado sobre Victoria Kent""",7,19,Author,Essay,ES,Appear to be bashing Victoria Kent...wow!
+6,20,1936-05-01,"""¿Existe una nueva consciencia?""",30,38,Author,Fiction,FI,
+6,20,1936-05-01,"""Sobre la educación del hombre argentino"" (notas)",62,70,Author,Essay,ES,"""Conferencia dada en la 'Fundación Argentina de Educación'"""
+6,20,1936-05-01,"""Primer debate de 'Sur': Louis Ollivier: 'Misión o demisión del hombre'""",39,61,Author,Debate,OT,"Includes: Gervasio Guillot Muñoz, Rancisco Romero, Louis Ollivier, Ernesto Palacio, Leopoldo Hurtado, Rodolfo Aráoz Alfaro, Faustino Jorge, Ramón Doll, Bonifacio Lastra"
+6,21,1936-06-01,"""Homenaje a Freud""",99,110,Author,Essay,ES,
+6,21,1936-06-01,"""Prefacio para el presente""",72,86,Author,Essay,ES,"""Prólogo de la obra 'La conscience malheurense', que aparecerá dentro de pocos días en París, editada por Denoël et Steele"""
+6,21,1936-06-01,"""Siegfried y la América Latina"" (notas)",111,113,Author,Essay,ES,
+6,21,1936-06-01,"""Las últimas obras de Mallea""",39,71,Author,Essay,ES,
+6,21,1936-06-01,"""Nota sobre Spengler""",87,98,Author,Essay,ES,
+6,21,1936-06-01,"""Crítica de arte"" (notas)",117,124,Author,Essay,ES,
+6,21,1936-06-01,"""Ensayo sobre las orientaciones del espíritu moderno""",7,38,Author,Essay,ES,
+6,21,1936-06-01,"""Un Talweg Ontológico"" (noticias)",113,116,Author,Essay,ES,
+6,21,1936-06-01,"""Una obra sobre la revelación psicológica de Proust""",125,125,Author,Announcement,AN,publication of a book about Proust; full on promotional material (!!)
+6,22,1936-07-01,"""¿Cómo lo resuelve Ud.? El probema de la paz constructiva""",7,44,Author,Essay,ES,published later with the Editorial Sur
+6,22,1936-07-01,"""Sonetos nocturnos""",45,46,Author,Poetry,PO,
+6,22,1936-07-01,"""Modos de G. K. Chesterton""",47,53,Author,Essay,ES,
+6,22,1936-07-01," ""Crítica de Arte. Raquel Forner en la Galería Müller"" (notas)",87,92,Author,Essay,ES,
+6,22,1936-07-01,"""Experiencia de una Exposición de Arte"" (notas)",92,94,Author,Essay,ES,
+6,22,1936-07-01," ""Carta sobre la independencia""",54,86,Author,Essay,ES,"published later with the Editorial Sur; ""traducción de Julio Gómez de la Serna"""
+6,22,1936-07-01,"""Un ensayo de Julio Irazusta sobre Rosas"" (notas)",95,101,Author,Essay,ES,
+6,22,1936-07-01,"""Laberinto de Amor"" (notas)",101,107,Author,Essay,ES,published with the Editorial Sur in MARCH of this same year (this issue is July)
+6,22,1936-07-01,"""Una obra sobre la revelación psicológica de Proust""",108,108,Author,Announcement,AN,Short notice saying that the journal will have to postpone the publication of these materials until the next number
+6,23,1936-08-01,"""Dan-Auta""",20,37,Author,Fiction,FI,"subtitled ""Cuento negro"""
+6,23,1936-08-01,"""El congreso internacional de escritores de los P.E.N. Clubs en Buenos Aires""",7,10,Author,Announcement,AN,"discusses the recent publication of ""André Gide y nuestro tiempo"" (Editorial Sur) and introduces the PEN Clubs conference in Buenos Aires"
+6,23,1936-08-01,"""Romances del río de enero""",125,132,Author,Poetry,PO,
+6,23,1936-08-01,"""Poemas""",45,54,Author,Poetry,PO,
+6,23,1936-08-01,"""Alfonso Reyes""",120,123,Author,Essay,ES,
+6,23,1936-08-01,"""La representación británica al congreso del P.E.N. Club""",79,88,Author,Essay,ES,
+6,23,1936-08-01,"""Ungaretti. Dos poemas de Ungaretti""",55,58,Author,Essay,ES,
+6,23,1936-08-01,"""Dos poemas de Ungaretti""",59,61,Author,Poetry,PO,Translated by Ernesto Palacio
+6,23,1936-08-01,"""Emil Ludwig""",89,97,Author,Essay,ES,
+6,23,1936-08-01,"""Dos valores hispanoamericanos""",133,136,Author,Essay,ES,
+6,23,1936-08-01,"""Georges Duchamel. Benjamin Cremieux""",140,144,Author,Essay,ES,
+6,23,1936-08-01,"""Presencia de Ortega""",11,19,Author,Essay,ES,
+6,23,1936-08-01,"""Dos altos representantes del espíritu francés""",38,44,Author,Essay,ES,"subtitled ""Notas sobre el universo de Supervielle"""
+6,23,1936-08-01,"""Jacques Maritain""",62,67,Author,Essay,ES,
+6,23,1936-08-01,"""Henri Michaux o el viajero perseguido"" ",68,73,Author,Essay,ES,
+6,23,1936-08-01,"""El teatro de Jean Giraudoux""",74,78,Author,Essay,ES,
+6,23,1936-08-01,"""Sobre una novela de Carlos Reyles""",98,103,Author,Essay,ES,
+6,23,1936-08-01,"""'Mi amante, mi única amante'""",104,119,Author,Fiction,FI,
+6,23,1936-08-01,"""'Epigramas americanos'""",137,139,Author,Poetry,PO,
+6,23,1936-08-01,"""Benjamin Cremieux""",145,145,Author,Announcement,AN,Short bio/announcement on this author
+6,23,1936-08-01,"""Notas""",146,149,Author,Announcement,AN,"Mini bios and information about a list of writers: Afranio Peixoto, Claudio de Souza, Alcides Arguedas, Lucien-Paul Thomas, Mariano Latorre, Raoul Auernheimer, Stefan Zweig, Svetoslav Minoff, Kalidas Nag"
+6,23,1936-08-01,"""Escritores participantes en el congreso internacional""",151,156,Author,Announcement,AN,El congreso internacional de escritores de los P.E.N. Clubs en Buenos Aires
+6,24,1936-09-01,"""El Bosque Petrificado"" (notas)",147,148,Author,Film Review,RE,"signed ""J. L. B."""
+6,24,1936-09-01,"""Notas sobre la inteligencia americana""",7,15,Author,Essay,ES,
+6,24,1936-09-01,"""Rasgos extrinsecos: La arquitectura, el mueble, el vestido, la palabra""",88,103,Author,Essay,ES,
+6,24,1936-09-01,"""Tren y automovil""",104,123,Author,Essay,ES,
+6,24,1936-09-01,"""Filosofía y originalidad"" (notas)",124,130,Author,Essay,ES,
+6,24,1936-09-01,"""Carta abierta a la Comisión Organizadora de la exposición de 'Un siglo de arte en la Argentina'"" (notas)",131,147,Author,Letter,LE,
+6,24,1936-09-01,"""Resurrección de Jorge Federico Händel""",16,39,Author,Essay,ES,
+6,24,1936-09-01," ""El porvenir de la poesía""",80,87,Author,Essay,ES,
+6,24,1936-09-01,"""Marcel Proust""",40,79,Author,Essay,ES,
+6,25,1936-10-01,"""Lawrence y la Odisea"" (notas)",79,81,Author,Book Review,RE,
+6,25,1936-10-01,"""De Kierkegaard a Heidegger""",50,59,Author,Essay,ES,
+6,25,1936-10-01,"""Carta abierta"" (notas)",100,102,Author,Letter,LE,
+6,25,1936-10-01," ""El Talleyrand del conde de Saint Aulaire"" (notas)",81,85,Author,Book Review,RE,
+6,25,1936-10-01,"""P. L. Landsberg, 'Essai sur l'expérience de la mort'"" (notas)",76,78,Author,Book Review,RE,"The title also includes the Spanish translation of the title of the work (""Ensayo sobre la experiencia de la muerte"") and it's publisher's information (Desclée de Brouwer & Cie, Paris, 1936)"
+6,25,1936-10-01,"""Salón de Pintores Argentinos en 'Amigos del Arte'"" (notas)",90,100,Author,Essay,ES,
+6,25,1936-10-01,"""Ajuste de una estética"" (notas)",86,90,Author,Essay,ES,
+6,25,1936-10-01,"""Recado sobre Teresa de la Parra""",65,75,Author,Essay,ES,
+6,25,1936-10-01,"""Marcel Proust (II - Formación histórica de la metáfora proustiana)""",25,49,Author,Essay,ES,
+6,25,1936-10-01,"""Búsqueda en la poesía contemporánea""",7,23,Author,Essay,ES,"""Conferencia pronunciada en 'SUR' el día 23 de setiembre del año en curso"""
+6,25,1936-10-01,"""En la muerte de Federico García Lorca""",24,24,Author,Poetry,PO,
+6,25,1936-10-01,"""A propósito de Igor Strawinsky""",60,64,Author,Essay,ES,
+6,26,1936-11-01,"""Wells, previsor (cine)"" (notas)",125,126,Author,Film Review,RE,
+6,26,1936-11-01,"""Diario de un privilegiado bajo el fascismo""",7,42,Author,Diary,OT,"Similar to the synthetic bio intros in anthologies (of JLB and ABC), we have a short (italicized) snipit about the diary in question immediately below the title"
+6,26,1936-11-01,"""Culto a Mallarmé""",43,52,Author,Fiction,FI,
+6,26,1936-11-01,"""La idea y la ciudad""",57,73,Author,Essay,ES,
+6,26,1936-11-01,"""Una opinión de Santayana sobre el testimonio filosóficos de Proust"" (notas)",121,124,Author,Essay,ES,
+6,26,1936-11-01,"""Palabras pronunciadas en el acto inaugural del Primer Congreso Gremial de Escritores"" (notas)",140,141,Author,Essay,ES,"""Los escritores de la América española observarán con atención e interés este primer Congreso Gremial de hombres de letras que se reune en Buenos Aires. Es señal que se va formando entre nosotros la conciencia de la función social del escritor"" (140) // describe el momento fundamental en que está América (Latina): ""En las naciones de nuestra América apenas ha existido hasta ahora la profesión de escritor. He existido, desde luego, la profesión de periodista, que no lo es exactamente idéntica"" (140)"
+6,26,1936-11-01,"""Pérdida y recuperación del sujeto en Husserl"" (notas)",117,121,Author,Essay,ES,
+6,26,1936-11-01,"""La siesta en el cedro""",53,56,Author,Fiction,FI,
+6,26,1936-11-01,"""XXVI Salón anual de Artes Plásticas. La escultura. Domingo Pronsato"" (notas)",127,137,Author,Essay,ES,
+6,26,1936-11-01,"""'Giulio Cesare' no tiene influencia strawinskiana (música)"" (notas)",138,140,Author,Essay,ES,
+6,26,1936-11-01,"""Marcel Proust (III - La psicología de la metáfora acción sagrada)""",74,108,Author,Essay,ES,
+6,26,1936-11-01," ""Consecuencias éticas de la teoría del conocimiento"" ",109,116,Author,Essay,ES,synthetic bio below the title (similar to JLB & ABC anthologies)
+6,27,1936-12-01,"""Insomnio""",71,72,Author,Poetry,PO,
+6,27,1936-12-01,"""Film and Theatre"" (notas)",112,113,Author,Book Review,RE,"signed ""J. L. B.""; review of Allardyce Nicoll's recent publication about secular theatre and film (professor at Yale); JLB notes that it is a ""volumen en octavo mayor"""
+6,27,1936-12-01,"""La agudeza disoviativa de Henri Michaux"" (notas)",114,116,Author,Essay,ES,"""Palabras de presentación del Sr. Henri Michaux en la conferencia que éste pronunciara en la Sociedad Hebraica Argentina el día 6 de noviembre de 1936"""
+6,27,1936-12-01,"""'Einfühlung' e Historia de Arte"" (notas)",105,111,Author,Essay,ES,
+6,27,1936-12-01,"""Exposición de pintores argentinos en la Galería Moody. Cesáreo Bernaldo."" (notas)",121,125,Author,Essay,ES,
+6,27,1936-12-01,"""Conferencia de Jacques Maritain a propósito de la 'Carta sobre la independencia'""",7,70,Author,Essay,ES,"""Pronunciada expresamente para 'SUR', el día 6 de octubre de 1936"""
+6,27,1936-12-01,"""Marcel Proust (IV y último - la pérdida progresiva del sentido de lo real en Proust)""",88,104,Author,Essay,ES,
+6,27,1936-12-01,"""Prolegómenos a una filosofía de la existencia. La crisis del pensamiento occidental""",73,87,Author,Essay,ES,
+6,27,1936-12-01,"""La cuestión de la 'Élite'"" (notas)",117,120,Author,Essay,ES,
+7,28,1937-01-30,"""Iasnaia Poliana y Astapovo - Tolstoi filósofo""",7,30,Author,Essay,ES,"""Discurso pronunciado en ocasión del vigésimoquinto aniversario de la muerte de Tolstoi"""
+7,28,1937-01-30,"""Letras Españolas: Inmortalidad de Unamuno"" (notas)",92,93,Author,Essay,ES,Homage to Unamuno (following his death in December 1936)
+7,28,1937-01-30,"""Unamuno o el rescate de la paradoja""",55,64,Author,Essay,ES,
+7,28,1937-01-30,"""Silueta de Macedonio Fernández"" (notas)",75,83,Author,Essay,ES,
+7,28,1937-01-30,"""Actualidad de la ontología"" (notas)",83,87,Author,Essay,ES,
+7,28,1937-01-30,"""Prolegómenos a una filosofía de la existencia. II. Orden social y orden de la existencia""",65,74,Author,Essay,ES,
+7,28,1937-01-30,"""Poemas""",47,54,Author,Poetry,PO,
+7,28,1937-01-30,"""Alejandro Korn"" (notas)",87,92,Author,Essay,ES,
+7,28,1937-01-30,"""La máscara de la sangre - tiempo y drama""",31,46,Author,Essay,ES,
+7,29,1937-02-27,"""Divergencias (cine)"" (notas)",95,96,Author,Essay,ES,"subtitled ""Sobre una crónica cinematográfica de Borges""; seems that Victoria Ocampo is doing some damage control here after some harsh critiques that Borges wrote about three films in an earlier issue of Sur..."
+7,29,1937-02-27,"""Rapsodia de una noche ventosa""",43,46,Author,Poetry,PO,
+7,29,1937-02-27,"""La fácil nostalgia"" (notas)",99,101,Author,Essay,ES,
+7,29,1937-02-27,"""La música y su sombra"" (notas)",97,98,Author,Book Review,RE,publication of Wadim von Struckhof's La música como factor de cultura
+7,29,1937-02-27,"""Sobre la torre de marfil""",58,79,Author,Fiction,FI,
+7,29,1937-02-27,"""Un capítulo de 'Eyeless in Gaza'""",47,54,Author,Fiction,FI,"HUGE publicity push. The first few pages of this article are about how the Editorial Sur is about the publish ""Eyeless in Gaza"" -- and reminding readers of how great their publication of ""Contrapunto"" was...it is an entire page and a half long"
+7,29,1937-02-27,"""Letras Francesas. Un enriquecimiento de la crítica contemporánea. A propósito de 'Histoire de la littérature fraçaise' por Albert Thibaudet"" (notas)",89,91,Author,Book Review,RE,
+7,29,1937-02-27,"""A una música ya otra vez vivida""",55,57,Author,Poetry,PO,
+7,29,1937-02-27,"""En torno a una exposición de arte 'Abstracto'"" (notas)",102,107,Author,Essay,ES,
+7,29,1937-02-27,"""Prolegomenos a una filosofía de la existencia. III y último - orden personal y orden existencial""",80,88,Author,Essay,ES,
+7,29,1937-02-27,"""Sobre la grandeza""",7,42,Author,Essay,ES,
+7,29,1937-02-27,"""Homenaje a Paul Claudel"" (notas)",91,94,Author,Essay,ES,
+7,29,1937-02-27,"""Horacio Quiroga"" (notas)",108,111,Author,Essay,ES,"there is an ""errata"" printed on the bottom half of this page -- for the previous issue -- of a diagram for Attilio Rossi's ""Primera Exposición de dibujos y grabados abstractos"""
+7,30,1937-03-30,"""Literatura individual frente a literatura dirigida""",89,104,Author,Essay,ES,
+7,30,1937-03-30,"""Letras Francesas. Disciplina y deliete de Julien Benda"" (notas)",105,112,Author,Essay,ES,"signed ""G. de T."""
+7,30,1937-03-30,"""Un capítulo de 'Eyeless in Gaza'""",28,48,Author,Fiction,FI,Chapter 10
+7,30,1937-03-30,"""Rossi en Buenos Aires"" (notas)",118,119,Author,Essay,ES,
+7,30,1937-03-30,"""Panorama de la actual literatura joven norteamericana""",49,65,Author,Essay,ES,
+7,30,1937-03-30,"""El problema de la civilización""",7,27,Author,Essay,ES,
+7,30,1937-03-30,"""De Buenos Aires a la capital aqrueológica de Sud América""",74,88,Author,Essay,ES,
+7,30,1937-03-30,"""Jean de Bremaeker (música)"" (notas)",116,117,Author,Essay,ES,
+7,30,1937-03-30,"""Letras Hispano-Americanas. Pedro Henríquez Ureña y su último libro"" (notas)",113,116,Author,Essay,ES,
+7,31,1937-04-30,"""Dos films"" (notas)",100,101,Author,Film Review,RE,Sabotage (1936) and Secret Agent
+7,31,1937-04-30,"""Influencia del espíritu renacentista en el descubrimiento de América""",60,91,Author,Essay,ES,
+7,31,1937-04-30,"""¿Habrá que suprimir la radio?"" (notas)",102,107,Author,Essay,ES,
+7,31,1937-04-30,"""Letras Hispanoamericanas. Idiomas aborígenes"" (notas)",92,100,Author,Essay,ES,
+7,31,1937-04-30,"""Con el pueblo de un nuevo humanismo""",7,21,Author,Essay,ES,
+7,31,1937-04-30,"""Soledad y libertad""",50,59,Author,Essay,ES,
+7,32,1937-05-31,"""Cartas abiertas - José Bergamín, Victoria Ocampo"" (notas)",,,,,ES,
+7,32,1937-05-31,"""Maruja Mallo""",63,66,Author,Essay,ES,Also a pseudo announcement of the Spanish painter (Mallo) being in Buenos Aires
+7,32,1937-05-31,"""Letras Alemanas. Una Pedagogía del Odio"" (notas)",80,81,Author,Book Review,RE,
+7,32,1937-05-31,"""Carta a Bernardo Canal Feijóo"" (notas)",91,95,Author,Letter,LE,
+7,32,1937-05-31,"""Monumento al mar""",41,47,Author,Poetry,PO,
+7,32,1937-05-31,"""García Lorca en el Odeón"" (notas)",75,80,Author,Essay,ES,
+7,32,1937-05-31,"""Letras Argentinas. Tiempo Lacerado"" (notas)",82,91,Author,Book Review,RE,"""Tiempo lacerado, por Carlos Alberto Erro, 'SUR', 1937"""
+7,32,1937-05-31,"""Dos Surrealists: J. Planas Casas y J. Batlle Planas"" (notas)",96,99,Author,Essay,ES,"signed ""A. R."""
+7,32,1937-05-31,"""Cabezas de tormenta""",7,40,Author,Essay,ES,"""De una Antología del humor negro, en prensa"""
+7,32,1937-05-31,"""Interpretación existencial de la duda cartesiana""",48,62,Author,Essay,ES,"""Texto de la comunicación que hará el autor al Congreso Descartes, en nombre del Instituto de Filosofía de la Universidad de Córdoba, en el Congreso Internacional de Filosofía de París"""
+7,32,1937-05-31,"""Cartas abiertas - Victoria Ocampo, José Bergamín"" (notas)",67,69,Author,Letter,LE,
+7,32,1937-05-31,"""Cartas abiertas - Victoria Ocampo, José Bergamín"" (notas)",69,74,Author,Letter,LE,
+7,33,1937-06-30,"""Carta a Federico García Lorca""",81,83,Author,Letter,LE,
+7,33,1937-06-30,"""El proletariado de la mujer según Mounier y según Bergamín"" (notas)",103,104,Author,Essay,ES,contains various excerpts from her previously published letters with José Bergamín
+7,33,1937-06-30,"""Swinburne"" (notas)",93,94,Author,Essay,ES,
+7,33,1937-06-30,"""Larra"" (notas)",88,92,Author,Essay,ES,
+7,33,1937-06-30,"""La hora fuera del tiempo""",53,64,Author,Essay,ES,"""Estas páginas pertenecen a un libro a publicarse con el título: L'Expérience poétique"""
+7,33,1937-06-30,"""Sobre el espíritu de facción"" ",65,77,Author,Essay,ES,
+7,33,1937-06-30,"""Noche""",33,52,Author,Fiction,FI,"""Fragmento de una obra en prensa"""
+7,33,1937-06-30,"""Los problemas de la ciencia"" (notas)",84,87,Author,Essay,ES,
+7,33,1937-06-30,"""Mar enlunecido""",78,80,Author,Poetry,PO,
+7,33,1937-06-30,"""IV Salón de Otoño de la Sociedad Argentina de Artistas Plásticos. César López Claro en la Galería Moody"" (notas)",95,100,Author,Essay,ES,
+7,33,1937-06-30,"""La vida privada""",7,32,Author,Essay,ES,
+7,33,1937-06-30,"""Orquesta sin batuta"" (notas)",100,101,Author,Essay,ES,
+7,33,1937-06-30,"""María de Maeztu""",102,103,Author,Essay,ES,pseudo-announcement about Maeztu being in Buenos Aires; mainly reproduces words of Ocampo about Maeztu being there
+7,33,1937-06-30,"""Calendario. (Revista de temas del mes)""",106,114,Author,Announcement,AN,
+7,34,1937-07-30,"""Dejad en paz a las palomas (Un nuevo cine abre sus puertas)"" (notas)",84,86,Author,Essay,ES,
+7,34,1937-07-30,"""H. G. Wells y las parábolas"" (notas)",78,79,Author,Book Review,RE,
+7,34,1937-07-30,"""Letras Francesas. Una apología de la literatura"" (notas)",80,83,Author,Book Review,Re,"Georges Duhamel, Défense des lettres. Biologie de mon métier (Mercure de France, París, 1937)"
+7,34,1937-07-30,"""El poeta y la esquizofrenia. La conciencia vergonzosa""",33,55,Author,Essay,ES,
+7,34,1937-07-30,"""Reflexiones de traductor: La última novela de Huxley"" (notas)",74,78,Author,Essay,ES,
+7,34,1937-07-30,"""El último puritano""",7,28,Author,Fiction,FI,"""Traducción de Antonio Marichalar"""
+7,34,1937-07-30,"""La Kermese Heroica""",86,88,Author,Film Review,RE,
+7,34,1937-07-30,"""V Salón de Arte de La Plata. II. Salón de Artistas Decoradores (con 4 láminas de grabados fuera del texto)"" (notas)",88,95,Author,Essay,ES,
+7,34,1937-07-30,"""Lógica, logística, logomaquia"" (notas)",68,70,Author,Essay,ES,
+7,34,1937-07-30,"""Reflexiones sobre el aburrimiento""",56,63,Author,Essay,ES,
+7,34,1937-07-30,"""Poemas postumos"" ",29,32,Author,Poetry,PO,
+7,34,1937-07-30,"""La libertad del espíritu y los poderes sin freno"" (notas)",64,67,Author,Essay,ES,"""Texto íntegro del discurso pronunciado ante el XV Congreso Internacional de la Federación de los Pen Clubs, celebrado hace pocos semanas en París"""
+7,34,1937-07-30,"""Pushkin"" (notas)",70,73,Author,Essay,ES,"Under the title of ""Centenarios"""
+7,34,1937-07-30,"""Calendario. (Revista de temas del mes)""",96,103,Author,Announcement,AN,
+7,35,1937-08-30,"""Virginia Woolf, Orlando y Cía""",10,67,Author,Essay,ES,"""Conferencia pronunciada en 'Amigos del Arte' de Buenos Aires, el 7 de julio"""
+7,35,1937-08-30,"""Viaje Olvidado"" (notas)",118,121,Author,Book Review,RE,"Signed ""V. O."""
+7,35,1937-08-30,"""La Fuga"" (notas)",121,122,Author,Film Review,RE,
+7,35,1937-08-30," ""Sobre la guerra santa""",98,117,Author,Essay,ES,"""Nuestro ilustre colaborador M. Jacques Maritain nos había nunciado el envío especial para este número de SUR de su ensayo completo 'Sobre la guerra santa', texto que apareció sólo fragmentariamente en el número de julio de la Novelle Revue Française de París. Como ese material aun no ha llegado a nuestro poder, nos limitamos a publicar ahora la parte ua aparecida en francés, haciendo esta reproducción a título documental para satisfacer la curiosidad que dicho estudio ha despertado, y sin perjuicio de dar a conocer el mes próximo la parte inédita anunciada"""
+7,35,1937-08-30,"""Una escena de 'Desterrados'""",68,86,Author,Theatre,TH,"""Comedia en tres actos, cuya versión castellana publicará próximamente la Editorial SUR (Traducción directa de A. Jiménez Frand)"
+7,35,1937-08-30,"""Católicos fascistas y católicos personalistas""",87,97,Author,Essay,ES,
+7,35,1937-08-30,"""Posición de SUR""",7,9,Author,Announcement,AN,about the religious/political position of the journal
+7,35,1937-08-30,"""Calendario. (Revista de temas del mes)""",123,,Author,Announcement,AN,
+7,36,1937-09-30,"""Un capítulo de mis Memorias - Rudolf Kassner""",7,29,Author,Essay,ES,"At the end of the except it says ""(Concluirá)"""
+7,36,1937-09-30,"""Antonio Arnoux""",30,38,Author,Fiction,FI,
+7,36,1937-09-30,"""Cordura y conocimiento. En el tricentenario del 'Discurso del Método'""",39,52,Author,Essay,ES,
+7,36,1937-09-30,"""Aquí, a un culpable""",53,54,Author,Poetry,PO,
+7,36,1937-09-30,"""Letras Españolas: Unamuno y Maragall""",55,59,Author,Book Review,RE,
+7,36,1937-09-30,"""Elogio de Mairena""",59,63,Author,Essay,ES,About Juan de Mairena
+7,36,1937-09-30,"""Letras Francesas. En torno a Rodin""",63,68,Author,Essay,ES,
+7,36,1937-09-30,"""La abstracción y la recta""",69,72,Author,Essay,ES,
+7,36,1937-09-30,"""Las exposiciones del mes""",72,80,Author,Essay,ES,"""Colmeino en 'Amigos del Arte'""; ""Grabados de Zapata Gollán en la 'Galería Viau y Cía'""; ""XXIII Salón Anual de Acuarelistas en 'Amigos del Arte'"""
+7,36,1937-09-30,"""Mekhano""",80,82,Author,Review,RE,"""Estrenado en el Teatro Colón el 17 de julio de 1937""; review of the ballet performance"
+7,36,1937-09-30,"""Casals en el Teatro Colón""",83,84,Author,Review,RE,Review of Pablo Casals recent performances
+7,36,1937-09-30,"""George Gershwin""",84,85,Author,Announcement,AN,"Includes birthdate & place and deathdate & place in a foot note: ""Nacido en Brooklyn, New York, el 26 de septiembre de 1898; muerto en Hollywood, a fines de julio de 1937"""
+7,36,1937-09-30,"""María de Maeztu y Américo Castro""",85,88,Author,Review,RE,Review of recent conferences
+7,36,1937-09-30,"""Calendario. (Revista de temas del mes)""",88,98,Author,Announcement,AN,
+7,37,1937-10-30,"""Un capítulo de mis Memorias - Rudolf Kassner (II)""",7,31,Author,Essay,ES,
+7,37,1937-10-30,"""Te estamos mirando, Inés""",32,39,Author,Fiction,FI,
+7,37,1937-10-30,"""Aventuras""",40,45,Author,Fiction,FI,or Essay? Very strange prose...seems almost like greguerías 
+7,37,1937-10-30,"""Oda a la alegría""",46,49,Author,Poetry,PO,
+7,37,1937-10-30,"""Maestros extranjeros""",50,51,Author,Essay,ES,
+7,37,1937-10-30,"""Por un arte integral""",52,62,Author,Letter,LE,"response to another response found in Sur, n. 30, marzo de 1937"
+7,37,1937-10-30,"""Radiografías fatídicas""",63,77,Author,Book Review,RE,"Review of this book of poetry (""Radiografías fatídicas"") that recently won a book prize"
+7,37,1937-10-30,"""La experiencia rusa de André Gide""",77,80,Author,Book Review,RE,
+7,37,1937-10-30,"""'El escalón'""",80,83,Author,Theatre Review,RE,
+7,37,1937-10-30,"""Un libro de Swami Vivekananda""",83,84,Author,Book Review,RE,
+7,37,1937-10-30,"""Genaro Estrada""",85,86,Author,Obituary,OT,
+7,37,1937-10-30,"""Verdes praderas""",87,88,Author,Book Review,RE,
+7,37,1937-10-30,"""XXVII Salón Nacional de Bellas Artes""",88,96,Author,Art Review,RE,
+7,37,1937-10-30,"""Estreno después de 158 años""",96,99,Author,Theatre Review,RE,
+7,37,1937-10-30,"""Calendario. (Revista de temas del mes)""",100,107,Author,Announcement,AN,
+7,38,1937-11-30,"""Plagas. La langosta y los 'gangsters' de la edicione clendestinas"" (notas)",68,73,Author,Essay,ES,
+7,38,1937-11-30,"""De regreso"" (notas)",92,93,Author,Film Review,RE,
+7,38,1937-11-30,"""El poeta y el esquizofrénico. La conciencia vergonzosa del poeta (II)""",41,61,Author,Essay,ES,
+7,38,1937-11-30,"""El cuaderno""",62,67,Author,Fiction,FI,
+7,38,1937-11-30,"""Nuevos derroteros"" (notas)",82,86,Author,Essay,ES,
+7,38,1937-11-30,"""Historia de una pasión argentina"" (notas)",74,82,Author,Book Review,RE,
+7,38,1937-11-30,"""Las exposiciones del mes"" (notas)",88,91,Author,Review,RE,
+7,38,1937-11-30,"""Día""",38,40,Author,Poetry,PO,
+7,38,1937-11-30,"""Sovetismo""",7,37,Author,Essay,ES,

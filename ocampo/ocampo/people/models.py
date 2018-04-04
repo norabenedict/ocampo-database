@@ -15,11 +15,12 @@ class Book(models.Model):
     price = models.CharField(max_length=20, blank=True, null=True)
     people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
     occupations = models.ForeignKey('Occupation', models.DO_NOTHING, blank=True, null=True)
-    paper = models.TextField(blank=True, null=True)
-    binding = models.TextField(blank=True, null=True)
-    typography = models.TextField(blank=True, null=True)
+    printer = models.CharField(max_length=200, blank=True, null=True)
+    #paper = models.TextField(blank=True, null=True)
+    #binding = models.TextField(blank=True, null=True)
+    #typography = models.TextField(blank=True, null=True)
     colophon = models.TextField(blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    #repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -74,8 +75,9 @@ class Contribution(models.Model):
     start_page = models.CharField(max_length=10, blank=True, null=True)
     end_page = models.CharField(max_length=10, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
-    TYPE_CHOICES = (('ES', 'Essay'), ('PO', 'Poetry'), ('LE', 'Letter'), ('BR', 'Book Review'), ('IL', 'Illustration'), ('FI', 'Fiction'), ('AN', 'Announcement'), ('OT', 'Other'))
-    contribution_type = models.CharField(max_length=2, choices=TYPE_CHOICES, default='ES')
+    contribution_type = models.CharField(max_length=20, blank=True, null=True)
+    TYPE_CHOICES = (('ES', 'Essay'), ('PO', 'Poetry'), ('LE', 'Letter'), ('RE', 'Review'), ('IL', 'Illustration'), ('FI', 'Fiction'), ('AN', 'Announcement'), ('TH', 'Theater'),('OT', 'Other'))
+    contribution_type_choice = models.CharField(max_length=2, choices=TYPE_CHOICES, default='ES')
 
     class Meta:
 
@@ -131,7 +133,6 @@ class Issue(models.Model):
     arrow_color = models.CharField(max_length=30, blank=True, null=True)
     colophon = models.TextField(blank=True, null=True)
     price = models.CharField(max_length=10, blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -164,11 +165,12 @@ class People(models.Model):
     birthplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_born')
     deathdate = models.DateField(blank=True, null=True)
     deathplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_died')
+    #TODO: ask about what to do with unknown dates or partial dates (birth and death) for people
     occupations = models.ManyToManyField(Occupation, blank=True)
     #TODO: make this a many to many field
     notes = models.TextField(blank=True, null=True)
     sex = models.CharField(max_length=20, blank=True, null=True)
-    viaf_id = models.IntegerField(blank=True, null=True)
+    viaf_id = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
 
@@ -182,6 +184,7 @@ class People(models.Model):
 class Periodicals(models.Model):
     title = models.CharField(max_length=15, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
 
