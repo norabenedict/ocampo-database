@@ -13,14 +13,13 @@ class Book(models.Model):
     title = models.CharField(max_length=200, blank=True, null=True)
     date = models.DateField(blank=True, null=True)
     price = models.CharField(max_length=20, blank=True, null=True)
-    people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
-    occupations = models.ForeignKey('Occupation', models.DO_NOTHING, blank=True, null=True)
+    people = models.ManyToManyField('People', through='CreatorBook')
     printer = models.CharField(max_length=200, blank=True, null=True)
     #paper = models.TextField(blank=True, null=True)
     #binding = models.TextField(blank=True, null=True)
     #typography = models.TextField(blank=True, null=True)
     colophon = models.TextField(blank=True, null=True)
-    #repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    #repository = models.ForeignKey('Repository', models.CASCADE, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -33,21 +32,19 @@ class Book(models.Model):
         return self.title
 
 class CreatorBook(models.Model):
-    ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('AR', 'Artist'), ('PR', 'Prologuist'))
-    creator_role = models.CharField(max_length=2, choices=ROLE_CHOICES, default='AU')
-    person = models.ForeignKey('People', models.DO_NOTHING)
-    book = models.ForeignKey('Book', models.DO_NOTHING)
+    person = models.ForeignKey('People', models.CASCADE)
+    creator_role = models.ForeignKey('Occupation', models.CASCADE)
+    book = models.ForeignKey('Book', models.CASCADE)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-         return '%s - %s - %s' % (self.person.name,
-                                  self.get_creator_role_display(),
+         return '%s - %s - %s' % (self.person.name, self.creator_role,
                                   self.book.title)
 '''
 class ContributionRolePersonContribution(models.Model):
-    contributions = models.ForeignKey('Contribution', models.DO_NOTHING, blank=True, null=True)
-    creator_role = models.ForeignKey('CreatorContribution', models.DO_NOTHING, blank=True, null=True)
-    people = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True)
+    contributions = models.ForeignKey('Contribution', models.CASCADE, blank=True, null=True)
+    creator_role = models.ForeignKey('CreatorContribution', models.CASCADE, blank=True, null=True)
+    people = models.ForeignKey('People', models.CASCADE, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -60,8 +57,8 @@ class ContributionRolePersonContribution(models.Model):
 class CreatorContribution(models.Model):
     ROLE_CHOICES = (('AU', 'Author'), ('TR', 'Translator'), ('AR', 'Artist'))
     creator_role = models.CharField(max_length=2, choices=ROLE_CHOICES, default='AU')
-    person = models.ForeignKey('People', models.DO_NOTHING)
-    contribution = models.ForeignKey('Contribution', models.DO_NOTHING)
+    person = models.ForeignKey('People', models.CASCADE)
+    contribution = models.ForeignKey('Contribution', models.CASCADE)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
@@ -71,7 +68,7 @@ class CreatorContribution(models.Model):
 
 class Contribution(models.Model):
     title = models.CharField(max_length=250, blank=True, null=True)
-    issue = models.ForeignKey('Issue', models.DO_NOTHING, blank=True, null=True)
+    issue = models.ForeignKey('Issue', models.CASCADE, blank=True, null=True)
     start_page = models.CharField(max_length=10, blank=True, null=True)
     end_page = models.CharField(max_length=10, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
@@ -89,14 +86,17 @@ class Contribution(models.Model):
         return self.title
 
 class Correspondence(models.Model):
-    sender = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_sent')
-    date = models.DateField(blank=True, null=True)
-    location_sent = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_sent_to')
-    recipient = models.ForeignKey('People', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_received')
-    location_received = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='correspondence_received_at')
+    sender = models.ForeignKey('People', models.CASCADE, blank=True, null=True, related_name='correspondence_sent')
+    date_on_letter = models.DateField(blank=True, null=True)
+    date_on_envelope = models.DateField(blank=True, null=True)
+    location_sent = models.ForeignKey('Place', models.CASCADE, blank=True, null=True, related_name='correspondence_sent_to')
+    recipient = models.ForeignKey('People', models.CASCADE, blank=True, null=True, related_name='correspondence_received')
+    location_received = models.ForeignKey('Place', models.CASCADE, blank=True, null=True, related_name='correspondence_received_at')
     paper = models.TextField(blank=True, null=True)
     text = models.TextField(blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    mentions = models.TextField(blank=True, null=True)
+    pages = models.CharField(max_length=10, blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.CASCADE, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -106,12 +106,12 @@ class Correspondence(models.Model):
         verbose_name_plural = 'correspondence'
 
     def __str__(self):
-        return '%s to %s on %s' % (self.sender.name, self.recipient.name, self.date.year)
+        return '%s to %s on %s' % (self.sender.name, self.recipient.name, self.date_on_letter)
 
 class Event(models.Model):
     date = models.DateField(blank=True, null=True)
     title = models.CharField(max_length=250, blank=True, null=True)
-    place = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True)
+    place = models.ForeignKey('Place', models.CASCADE, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -124,7 +124,7 @@ class Event(models.Model):
         return '%s (%s)' % (self.title, self.date.year)
 
 class Issue(models.Model):
-    periodicals = models.ForeignKey('Periodicals', models.DO_NOTHING, blank=True, null=True)
+    periodicals = models.ForeignKey('Periodicals', models.CASCADE, blank=True, null=True)
     number = models.CharField(max_length=10, blank=True, null=True)
     year = models.CharField(max_length=10, blank=True, null=True)
     date = models.DateField(blank=True, null=True)
@@ -162,12 +162,10 @@ class Occupation(models.Model):
 class People(models.Model):
     name = models.CharField(max_length=80, blank=True, null=True)
     birthdate = models.DateField(blank=True, null=True)
-    birthplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_born')
+    birthplace = models.ForeignKey('Place', models.CASCADE, blank=True, null=True, related_name='people_born')
     deathdate = models.DateField(blank=True, null=True)
-    deathplace = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True, related_name='people_died')
-    #TODO: ask about what to do with unknown dates or partial dates (birth and death) for people
+    deathplace = models.ForeignKey('Place', models.CASCADE, blank=True, null=True, related_name='people_died')
     occupations = models.ManyToManyField(Occupation, blank=True)
-    #TODO: make this a many to many field
     notes = models.TextField(blank=True, null=True)
     sex = models.CharField(max_length=20, blank=True, null=True)
     viaf_id = models.CharField(max_length=50, blank=True, null=True)
@@ -184,7 +182,7 @@ class People(models.Model):
 class Periodicals(models.Model):
     title = models.CharField(max_length=15, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
-    repository = models.ForeignKey('Repository', models.DO_NOTHING, blank=True, null=True)
+    repository = models.ForeignKey('Repository', models.CASCADE, blank=True, null=True)
 
     class Meta:
 
@@ -213,7 +211,7 @@ class Place(models.Model):
 
 class Repository(models.Model):
     name = models.CharField(max_length=150, blank=True, null=True)
-    place = models.ForeignKey('Place', models.DO_NOTHING, blank=True, null=True)
+    place = models.ForeignKey('Place', models.CASCADE, blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
 
     class Meta:

@@ -9,6 +9,10 @@ from django.core.management.base import BaseCommand
 # the import would be: from plinyletters.models import Letter
 from ocampo.people.models import Book
 
+from ocampo.people.models import People
+
+from ocampo.people.models import Occupation
+
 def map_csv(csvfile, headers=True):
     """
     This function does the actual work of importing the CSV and mapping it to a
@@ -31,21 +35,12 @@ def map_csv(csvfile, headers=True):
         book = Book()
         book.title = row['Title']
         book.date = row['Date'] if row['Date'] else None
-        book.price = row['Price'] if row['Date'] else None
+        book.price = row['Price'] if row['Price'] else None
         book.printer = row['Printer'] if row['Printer'] else None
         book.colophon = row['Colophon'] if row['Colophon'] else None
-        book.notes = row['notes'] if row['Notes'] else None
-
-        people, created = People.objects.get_or_create(name=row['Name'])
-
-        book.people = people
-
-        occupation, created = Occupation.objects.get_or_create(name=row['Occupation'])
-
-        book.occupation = occupation
+        book.notes = row['Notes'] if row['Notes'] else None
 
         book.save()
-
 
 class Command(BaseCommand):
 

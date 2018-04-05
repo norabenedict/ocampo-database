@@ -11,7 +11,8 @@ class PeopleAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ['name',]
 class BookAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title',)
+    search_fields = ['title',]
 class CreatorContributionAdmin(admin.ModelAdmin):
     pass
 class OccupationAdmin(admin.ModelAdmin):
@@ -21,7 +22,8 @@ class ContributionAdmin(admin.ModelAdmin):
 class CorrespondenceAdmin(admin.ModelAdmin):
     pass
 class PlaceAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name',)
+    search_fields = ['name',]
 class RepositoryAdmin(admin.ModelAdmin):
     pass
 class IssueAdmin(admin.ModelAdmin):
